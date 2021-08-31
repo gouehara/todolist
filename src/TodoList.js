@@ -7,16 +7,8 @@ export default class TodoList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      todos: JSON.parse(window.localStorage.getItem("todos") || "[]"),
+      todos: [],
     };
-  }
-
-  componentDidMount() {
-    window.localStorage.setItem("todos", JSON.stringify(this.state.todos))
-  }
-
-  componentDidUpdate() {
-    window.localStorage.setItem("todos", JSON.stringify(this.state.todos))
   }
 
   create = (newTodo) => {
