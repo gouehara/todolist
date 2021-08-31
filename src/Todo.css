@@ -46,6 +46,7 @@
   cursor: pointer;
   color: #fff;
   margin: 0.4em;
+  margin-left: 1.2em;
 }
 
 .Todo-edit-form {
@@ -78,6 +79,12 @@
   margin-left: 5px;
   cursor: pointer;
   transition: background 0.2s ease-out;
+}
+
+@media (max-width: 500px) {
+  .Todo-edit-form button {
+    width: 10rem;
+  }
 }
 
 .Todo-edit-form button:hover {
